@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0f0f1a;
+  color: #e0e0ff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-align: center;
+  padding: 80px 20px 60px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  color: #a5b4fc;
+}
+
+p {
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.welcome-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  margin: 30px 0 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s ease-out;
+}
+
+.welcome-img.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#message {
+  font-size: 1.3rem;
+  color: #c7d2fe;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  border-top: 1px solid #1e293b;
+  margin-top: 60px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 1.8rem; }
+  header { padding: 60px 15px 40px; }
+}
